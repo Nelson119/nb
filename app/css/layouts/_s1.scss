@@ -1,0 +1,67 @@
+[role=s1]{
+    background: #f8fafc;
+    .viewport{
+        @media screen and (max-width: 1000px) {
+            width: per(540, 640);
+        }
+        .slick{
+            width: 1024px;
+            margin: 0 auto;
+            height: 840px;
+            // overflow: hidden;
+            max-width: 100%;
+            @media screen and (max-width: 1000px) {
+                height: auto;
+            }
+            .slide{
+                height: 840px;
+                position: relative;
+                @media screen and (max-width: 1000px) {
+                    height: auto;
+                }
+                h3{
+                    margin: 68px auto 62px;
+                    @media screen and (max-width: 1000px) {
+                        
+                    }
+                }
+                .left,.right{
+                    position: absolute;
+                    top: 182px;
+                    @media screen and (max-width: 1000px) {
+                        position: relative;
+                        top: auto;
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                .left{
+                    left: 0;
+                }
+                .right{
+                    right: 0;
+                    @media screen and (max-width: 1000px) {
+                        margin-top: 3em;
+                    }
+                }
+                .hint{
+                    position: absolute;
+                    bottom: 103px;
+                    left: 44px;
+                    @media screen and (max-width: 1000px) {
+                        position: relative;
+                        bottom: auto;
+                        width: 100%;
+                        left: auto;
+                    }
+                }
+                .hint2{
+                    left: 397px;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,139 @@
+.vbox-overlay{
+    background: rgba(0,0,0,0.8);
+    z-index: 1040;
+
+    height: 100%;
+}
+.vbox-inline{
+    // padding: 2em;
+    // border: 1px solid #ccc;
+    box-shadow: 0;
+    // border-radius: 6px;
+    background-color: #f8f8f8;
+
+    @media screen and (max-width: 1000px) {
+        height: 100%!important;
+    }
+}
+.vbox-content{
+    margin: 5em 0 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-feature-settings: "liga";
+	font-style: normal;
+	text-rendering: optimizelegibility;
+	letter-spacing:0.5px;
+	word-spacing:0.5px;
+	overflow-x:hidden;
+	position:relative;
+	color: $text-color;
+    font-family: $font-family-sans-serif;
+    font-size: 14px;
+    
+    @media screen and (max-width: 800px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 1000px) {
+        margin: 0!important;
+        height: 100%!important;
+    }
+}
+.vbox-next,.vbox-prev{
+    display: none!important;
+}
+.vbox-close{
+    display: none!important;
+}
+
+.flag-pop{
+    position: relative;
+    height: 100%;
+    @media screen and (max-width: 1000px) {
+        padding: 5vw;
+    }
+    h3{
+        color: #004483;
+        text-align: center;
+        font-size: 36px;
+        padding-top: 52px;
+        margin-top: 0;
+        @media screen and (max-width: 1000px) {
+            padding-top: 38vw;
+            font-size: 8vw;
+        }
+    }
+    h5{
+        color: #708cb1;
+        text-align: center;
+        padding-top: 20px;
+        margin-top: 0;
+        @media screen and (max-width: 1000px) {
+            padding-top: 2vw;
+            line-height: 1.4;
+            font-size: 4.5vw;
+        }
+    }
+    p{
+        font-size: 20px;
+        a{
+            border: 2px #689bc8 solid;
+            color: #689bc8;
+            box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+            padding: 10px 22px;
+            margin-left: 1em;
+            @media screen and (max-width: 1000px) {
+                float: none!important;
+                display: block;
+                margin-left: 0;
+                margin-bottom: 1em;
+                text-align: center;
+            }
+        }
+    }
+    .center{
+        width: 650px;
+        margin: 0 auto;
+        position: relative;
+        @media screen and (max-width: 1000px) {
+            width: 85vw;
+        }
+    }
+    .flag{
+        position: absolute;
+        top: 0;
+        left: 0;
+        @media screen and (max-width: 1000px) {
+            width: 25vw;
+            left: 37.5vw;
+        }
+    }
+    .veno-close{
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        @media screen and (max-width: 1000px) {
+            width: 3em;
+            height: 3em;
+            top: 0 ;
+            right: 0;
+        }
+    }
+    .hint{
+        display: block;
+        position: relative;
+        top: 3em;
+        width: 100%;
+        color: #b8b8b8;
+        @media screen and (max-width: 1000px) {
+            font-size: 12px;
+        }
+    }
+}
+@media (min-width: 992px){
+    .venoframe, .vbox-inline {
+        max-width: 1200px;
+        width: 85%;
+        height: 540px;
+        height: 80vh;
+    }
+}
