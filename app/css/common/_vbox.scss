@@ -48,13 +48,18 @@
 .flag-pop{
     position: relative;
     height: 100%;
+    font-size: 14px;
+    @media screen and (max-width: 1280px) {
+        font-size: 11px;
+        
+    }
     @media screen and (max-width: 1000px) {
         padding: 5vw;
     }
     h3{
         color: #004483;
         text-align: center;
-        font-size: 36px;
+        font-size: 3em;
         padding-top: 52px;
         margin-top: 0;
         @media screen and (max-width: 1000px) {
@@ -74,7 +79,7 @@
         }
     }
     p{
-        font-size: 20px;
+        font-size: 1.6em;
         a{
             border: 2px #689bc8 solid;
             color: #689bc8;
@@ -102,6 +107,11 @@
         position: absolute;
         top: 0;
         left: 0;
+        @media screen and (max-width: 1280px) {
+            img{
+                max-width:80%;
+            }
+        }
         @media screen and (max-width: 1000px) {
             width: 25vw;
             left: 37.5vw;
@@ -116,6 +126,18 @@
             height: 3em;
             top: 0 ;
             right: 0;
+        }
+    }
+    figure{
+        @media screen and (max-width: 1280px) {
+            img{
+                max-width:35vw;
+            }
+        }
+        @media screen and (max-width: 780px) {
+            img{
+                max-width:75vw;
+            }
         }
     }
     .hint{

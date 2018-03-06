@@ -50,7 +50,7 @@
         position: relative;
         padding-top: 1px;
         margin-top: -1px;
-        @media screen and (max-width: $screen-md) {
+        @media screen and (max-width: 1024px) {
             width: 100%;
         }
         h2,h3{
@@ -71,6 +71,108 @@
             line-height: em(20,14);
             @media screen and (max-width: 1000px) {
                 font-size: 11px;
+            }
+        }
+        .slick{
+            .slide2{
+                .center{
+                    width: 810px;
+                    margin: 0 auto 160px;
+
+                    .download{
+                        margin-top: 54px;
+                        @media screen and (max-width: 1000px) {
+                            margin: 0 auto;
+                        }
+                    }
+                    @media screen and (max-width: 1000px) {
+                        width: 100%;
+                        margin: 0 auto;
+                        .currency{
+                            text-align: center;
+                        }
+                    }
+                }
+                
+                .ic-currency{
+                    width: 288px;
+                    height: 124px;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-right: 33px;
+                    @media screen and (max-width: 1000px) {
+                        display: block;
+                        width: 50%;
+                        height: auto;
+                        margin: 0 auto;
+                        img,svg{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    &~a{
+                        display: inline-block;
+                        vertical-align: top;
+                        img,svg{
+                            width: 120px;
+                            height: 164px;
+                        }
+                        @media screen and (max-width: 1000px) {
+                            // display: block;
+                            width: 25%;
+                            margin: 5% auto 5% 2%;
+                            text-align: center;
+                            img,svg{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        &+a{
+                            margin-left: 64px;
+                            @media screen and (max-width: 1000px) {
+                                margin-left: 3%;
+                            }
+                        }
+                    }
+                }
+                .ic-download{
+                    width: 288px;
+                    height: 124px;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-right: 33px;
+                    @media screen and (max-width: 1000px) {
+                        display: block;
+                        width: 50%;
+                        height: auto;
+                        margin: 0 auto;
+                        img,svg{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    &~a{
+                        display: inline-block;
+                        vertical-align: bottom;
+                        width: 488px;
+                        height: 80px;
+                        background-color: #708cb1;
+                        color: #ffffff;
+                        line-height: 80px;
+                        text-align: center;
+                        font-size: em(36,14);
+                        @media screen and (max-width: 1000px) {
+                            width: 65%;
+                            height: 2em;
+                            line-height: 2em;
+                            font-size: 14px;
+                            font-size: vwxs(28,640);
+                            margin: 1em auto 0;
+                            display: block;
+
+                        }
+                    }
+                }
             }
         }
     }
