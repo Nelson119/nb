@@ -75,6 +75,10 @@
         }
         .slick{
             .slide2{
+                margin-top: 1.3em;
+                @media screen and (max-width: 1000px) {
+                    margin-top: 0.5em;
+                }
                 .center{
                     width: 810px;
                     margin: 0 auto 160px;
