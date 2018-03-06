@@ -5,7 +5,8 @@
   },
   "scripts": {
     "postinstall": "bower i --config.interactive=false",
-    "postupdate": "bower update --config.interactive=false"
+    "postupdate": "bower update --config.interactive=false",
+    "test": "test.sh"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",
