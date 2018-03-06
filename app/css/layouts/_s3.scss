@@ -5,7 +5,10 @@
             width: per(540, 640);
         }
         h3{
-            margin: 58px auto;
+            margin: 58px auto 0.35em;
+            @media screen and (max-width: 1000px) {
+                margin: 2em auto 0;
+            }
             .hl{
                 color: #73a7d7;
             }
