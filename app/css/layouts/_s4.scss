@@ -1,6 +1,10 @@
 [role=s4]{
+    padding-top: 1px;
+        @media screen and (max-width: 1000px) {
+            padding-top: 12.5vw;
+        }
     h3{
-        margin-top: 68px;
+        margin-top: 100px;
         margin-bottom: 60px;
         text-align: center;
         color: #004483;
@@ -8,7 +12,7 @@
             font-size: 48px;
             font-size: vwxs(48,640);
             font-weight: 800;
-                margin: 0.7em auto 0.5em;
+            margin: 0.7em auto 0.5em;
         }
     }
     h4{
@@ -46,6 +50,7 @@
     }
     .viewport{
         width: 810px;
+        padding-top: 1px;
         @media screen and (max-width: 1000px) {
             width: per(520, 640);
         }

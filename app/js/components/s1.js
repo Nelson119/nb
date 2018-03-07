@@ -11,7 +11,7 @@ app.partial.s1 = function($, container){
 		container.addClass('loaded');
 		$('.slick:not(.slick-initialized) .slide', container).each(function(index){			
 			triggerArr[index] = [];
-			$('img[data-src*=gif]', this).each(function(){
+			$('img[data-src*=gif],img[src*=gif]', this).each(function(){
 				var strid = 'frameset' + (new Date*1);
 				this.id = strid;
 				var ff = new freezeframe('#'+strid).capture().setup();
