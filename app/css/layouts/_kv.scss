@@ -1,9 +1,8 @@
 [role=kv]{
     .viewport{
-        padding-top: per(800,1280);
         width: 1280px;
         max-width: 100%;
-        margin-top: 120px;
+        margin-top: 80px;
         margin-bottom: 40px;
         @media screen and (max-width: 1000px) {
             padding-top: 0;
@@ -38,13 +37,14 @@
         }
     }
     #animation_container {
-      position:absolute;
+      position: relative;
       margin:0 auto;
       top:0;
       bottom:0;
       background-color:rgba(0, 0, 0, 0);
       width: 100% !important;
-      height: 100% !important;
+      height: 0 !important;
+      padding-top: per(800,1280);
       img{
           @include SubImgW();
           position: relative;
@@ -66,6 +66,7 @@
         display: block; 
         width: 100% !important;
         height: 100% !important;
+        top: 0;
         background-color:rgba(0, 0, 0, 0);
     }
 }

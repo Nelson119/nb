@@ -40,8 +40,8 @@ app.partial.kv = function($, container){
                 function resizeCanvas() {
                     var w = lib.properties.width,
                         h = lib.properties.height;
-                    var iw = window.innerWidth,
-                        ih = window.innerHeight;
+                    var iw = $('.viewport', container).innerWidth(),
+                        ih = $('.viewport', container).innerHeight();
                     var pRatio = window.devicePixelRatio || 1,
                         xRatio = iw / w,
                         yRatio = ih / h,
