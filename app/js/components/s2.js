@@ -11,10 +11,14 @@ app.partial.s2 = function($, container){
 		container.addClass('loaded');
 		$('.slick:not(.slick-initialized) .slide', container).each(function(index){	
 			triggerArr[index] = [];
-			$('img[data-src*=gif]', this).each(function(){
+			$('img[data-src*=gif]:visible,img[src*=gif]:visible', this).each(function(){
 				var strid = 'frameset' + (new Date*1);
 				this.id = strid;
-				var ff = new freezeframe('#'+strid).capture().setup();
+				var ff = new freezeframe({
+					
+					'selector': '#' + strid,
+					'animation_play_duration': 'infinity'
+				}).capture().setup();
 				triggerArr[index].push(ff);
 			});
 		});

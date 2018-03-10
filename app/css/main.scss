@@ -15,4 +15,27 @@ $icon-font-path: '../fonts/';
     @import "layouts/main";
 }
 html.ie{
+    [role=content]{
+        .viewport{
+            .slick{
+                .slide{
+                    .ie{
+                        display: block;
+                    }
+                    .noie{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+    }
+    .flag-pop {
+      .noie{
+          display: none;
+      }
+      .ie{
+          display: block;
+      }
+    }
 }
