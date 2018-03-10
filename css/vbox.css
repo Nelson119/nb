@@ -1,0 +1,167 @@
+@charset "UTF-8";
+.vbox-overlay {
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1040;
+  height: 100%;
+}
+
+.vbox-inline {
+  box-shadow: 0;
+  background-color: #f8f8f8;
+}
+
+.vbox-content {
+  margin: 5em 0 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+  font-style: normal;
+  text-rendering: optimizelegibility;
+  letter-spacing: 0.5px;
+  word-spacing: 0.5px;
+  overflow-x: hidden;
+  position: relative;
+  color: #4a4a4a;
+  font-family: "Noto Sans TC", "microsoft jhenghei", "微軟正黑體", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.vbox-next, .vbox-prev {
+  display: none !important;
+}
+
+.vbox-close {
+  display: none !important;
+}
+
+.flag-pop {
+  position: relative;
+  height: 100%;
+  font-size: 18px;
+}
+
+.flag-pop h3 {
+  color: #004483;
+  text-align: center;
+  font-size: 3em;
+  padding-top: 52px;
+  margin-top: 0;
+}
+
+.flag-pop h5 {
+  color: #708cb1;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 0;
+}
+
+.flag-pop p {
+  font-size: 1.6em;
+}
+
+.flag-pop p a {
+  border: 2px #689bc8 solid;
+  color: #689bc8;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px 22px;
+  margin-left: 1em;
+}
+
+.flag-pop .center {
+  width: 650px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.flag-pop .flag {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flag-pop .veno-close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.flag-pop .hint {
+  display: block;
+  position: relative;
+  top: 3em;
+  width: 100%;
+  color: #b8b8b8;
+}
+
+@media screen and (max-width: 1366px) {
+  .flag-pop {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .flag-pop {
+    font-size: 11px;
+  }
+  .flag-pop figure img {
+    max-width: 35vw;
+  }
+  .flag-pop .flag img {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .flag-pop {
+    padding: 5vw;
+  }
+  .flag-pop figure img {
+    max-width: 75vw;
+  }
+  .flag-pop h3 {
+    padding-top: 30vw;
+    font-size: 8vw;
+  }
+  .flag-pop h5 {
+    padding-top: 2vw;
+    line-height: 1.4;
+    font-size: 4.5vw;
+  }
+  .flag-pop p a {
+    float: none !important;
+    display: block;
+    margin-left: 0;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  .flag-pop .center {
+    width: 85vw;
+  }
+  .flag-pop .flag {
+    width: 25vw;
+    left: 37.5vw;
+  }
+  .venoframe, .vbox-inline {
+    max-width: 1200px;
+    width: 85%;
+    height: 540px;
+    height: 80vh;
+  }
+  .hint {
+    font-size: 12px;
+  }
+  .veno-close {
+    width: 3em;
+    height: 3em;
+    top: 0;
+    right: 0;
+  }
+  .vbox-content {
+    font-size: 16px;
+    margin: 0 !important;
+    height: 100% !important;
+  }
+  .vbox-inline {
+    height: 100% !important;
+  }
+}
